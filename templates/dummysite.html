@@ -1,1 +1,7 @@
 Result : {{result}}
+
+
+{%import os.path%}
+{%if os.path.isfile('/tmp/figure1.png') == True:%}
+    {%print("Figure 1 exist")%}
+{%endif%}
